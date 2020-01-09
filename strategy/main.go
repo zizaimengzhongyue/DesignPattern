@@ -8,11 +8,13 @@ import (
 	"./candidate"
 )
 
+//Candidate 候选人
 type Candidate interface {
 	Pass()
 	Reject()
 }
 
+//interview 面试
 type interview struct {
 	candidate Candidate
 }
