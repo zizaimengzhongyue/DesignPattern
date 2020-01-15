@@ -11,6 +11,12 @@ type Assistant struct {
 	HR HR
 }
 
+//SupportInit 支持部门初始化
+func (a Assistant) SupportInit() {
+	a.IT = IT{}
+	a.HR = HR{}
+}
+
 //ITSupport IT 支持
 func (a Assistant) ITSupport() {
 	a.IT.Support()
